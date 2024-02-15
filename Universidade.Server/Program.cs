@@ -1,30 +1,34 @@
-var builder = WebApplication.CreateBuilder(args);
+using System;
+using Microsoft.Extensions.Configuration;
+using MySql.Data.MySqlClient;
 
-// Add services to the container.
-
-builder.Services.AddControllers();
-// Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
-builder.Services.AddEndpointsApiExplorer();
-builder.Services.AddSwaggerGen();
-
-var app = builder.Build();
-
-app.UseDefaultFiles();
-app.UseStaticFiles();
-
-// Configure the HTTP request pipeline.
-if (app.Environment.IsDevelopment())
+namespace MeuProjeto
 {
-  app.UseSwagger();
-  app.UseSwaggerUI();
+  class Program
+  {
+    static void Main(string[] args)
+    {
+      // Carrega as configurações do arquivo appsettings.json
+      IConfiguration configuration = new ConfigurationBuilder()
+          .AddJsonFile("appsettings.json")
+          .Build();
+
+      // Obtém a string de conexão do arquivo de configuração
+      string connectionString = configuration.GetConnectionString("MySqlConnection");
+
+      // Tenta estabelecer uma conexão com o banco de dados MySQL
+      using (var connection = new MySqlConnection(connectionString))
+      {
+        try
+        {
+          connection.Open();
+          Console.WriteLine("Conexão com o banco de dados MySQL estabelecida com sucesso!");
+        }
+        catch (Exception ex)
+        {
+          Console.WriteLine($"Erro ao tentar conectar ao banco de dados: {ex.Message}");
+        }
+      }
+    }
+  }
 }
-
-app.UseHttpsRedirection();
-
-app.UseAuthorization();
-
-app.MapControllers();
-
-app.MapFallbackToFile("/index.html");
-
-app.Run();
