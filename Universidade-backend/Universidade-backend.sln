@@ -1,0 +1,33 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.8.34330.188
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Universidade-backend.Server", "Universidade-backend.Server\Universidade-backend.Server.csproj", "{24B40185-FBAD-4F03-90AC-2AF5109879D3}"
+EndProject
+Project("{54A90642-561A-4BB1-A94E-469ADEE60C69}") = "universidade-backend.client", "universidade-backend.client\universidade-backend.client.esproj", "{71CAA363-A835-4A94-BFC3-1DE1A28838DD}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{24B40185-FBAD-4F03-90AC-2AF5109879D3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{24B40185-FBAD-4F03-90AC-2AF5109879D3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{24B40185-FBAD-4F03-90AC-2AF5109879D3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{24B40185-FBAD-4F03-90AC-2AF5109879D3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{71CAA363-A835-4A94-BFC3-1DE1A28838DD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{71CAA363-A835-4A94-BFC3-1DE1A28838DD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{71CAA363-A835-4A94-BFC3-1DE1A28838DD}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{71CAA363-A835-4A94-BFC3-1DE1A28838DD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{71CAA363-A835-4A94-BFC3-1DE1A28838DD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{71CAA363-A835-4A94-BFC3-1DE1A28838DD}.Release|Any CPU.Deploy.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {BBCA61FC-B5D2-4AB9-B381-186EFB6B44EF}
+	EndGlobalSection
+EndGlobal
