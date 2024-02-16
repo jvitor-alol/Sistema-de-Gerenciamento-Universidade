@@ -32,6 +32,7 @@ dist-ssr
 ## MySQL container
 
 mysql.sock
+mysql_data
 
 ###############################################################################
 ## ASP.NET
