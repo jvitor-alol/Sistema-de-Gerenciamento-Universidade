@@ -59,8 +59,8 @@ O sistema foi desenvolvido em C# utilizando os frameworks ASP.NET e Node.js para
             <a href="https://github.com/dkexs" target="_blank"><p>dkexs</p></a>
         </td>
         <td style="padding: 20px; border: 1px solid #ddd; vertical-align: middle;">
-            <img src="https://via.placeholder.com/100" alt="Texto abaixo da imagem 8" style="display: block; margin: 0 auto; width: 100px; height: 100px;">
-            <p>Petrus</p>
+            <img src="https://avatars.githubusercontent.com/u/60987344?v=4" alt="PedroBrito22" style="display: block; margin: 0 auto; width: 100px; height: 100px;">
+            <a href="https://github.com/PedroBrito22" target="_blank"><p>PedroBrito22</p></a>
         </td>
     </tr>
   </table>
