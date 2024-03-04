@@ -27,7 +27,7 @@ O sistema foi desenvolvido em C# utilizando os frameworks ASP.NET e Node.js para
 
 O sistema possui persistência de dados por meio do uso de um container Docker de um servidor MySQL de acordo com o Modelo Entidade-Relacionamento (MER) abaixo:
 
-![MER](./Universidade.Server/infra/workbench/mer.png)
+![MER](./Universidade.Server/Infraestrutura/workbench/mer.png)
 
 ## Colaboradores
 

@@ -1,34 +1,29 @@
-using System;
-using Microsoft.Extensions.Configuration;
-using MySql.Data.MySqlClient;
+using Microsoft.EntityFrameworkCore;
+using Universidade.Server.Data;
 
-namespace MeuProjeto
+var builder = WebApplication.CreateBuilder(args);
+
+// Add services to the container.
+
+builder.Services.AddControllers();
+builder.Services.AddEndpointsApiExplorer();
+builder.Services.AddSwaggerGen();
+
+var connectionString = builder.Configuration.GetConnectionString("MySqlConnection");
+builder.Services.AddDbContext<AppDbContext>(options => options.UseMySql(connectionString, ServerVersion.AutoDetect(connectionString)));
+
+var app = builder.Build();
+
+if (app.Environment.IsDevelopment())
 {
-  class Program
-  {
-    static void Main(string[] args)
-    {
-      // Carrega as configurações do arquivo appsettings.json
-      IConfiguration configuration = new ConfigurationBuilder()
-          .AddJsonFile("appsettings.json")
-          .Build();
-
-      // Obtém a string de conexão do arquivo de configuração
-      string connectionString = configuration.GetConnectionString("MySqlConnection");
-
-      // Tenta estabelecer uma conexão com o banco de dados MySQL
-      using (var connection = new MySqlConnection(connectionString))
-      {
-        try
-        {
-          connection.Open();
-          Console.WriteLine("Conexão com o banco de dados MySQL estabelecida com sucesso!");
-        }
-        catch (Exception ex)
-        {
-          Console.WriteLine($"Erro ao tentar conectar ao banco de dados: {ex.Message}");
-        }
-      }
-    }
-  }
+  app.UseSwagger();
+  app.UseSwaggerUI();
 }
+
+app.UseHttpsRedirection();
+
+app.UseAuthorization();
+
+app.MapControllers();
+
+app.Run();
