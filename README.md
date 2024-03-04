@@ -23,6 +23,12 @@ O sistema foi desenvolvido em C# utilizando os frameworks ASP.NET e Node.js para
 - **Gestão de Disciplinas**: Permite a criação, edição e exclusão de disciplinas oferecidas pela universidade.
 - **Matrícula em Disciplinas**: Permite que alunos se matriculem em disciplinas disponíveis.
 
+## Banco de Dados
+
+O sistema possui persistência de dados por meio do uso de um container Docker de um servidor MySQL de acordo com o Modelo Entidade-Relacionamento (MER) abaixo:
+
+![MER](./Universidade.Server/infra/workbench/mer.png)
+
 ## Colaboradores
 
 <div align="center">
