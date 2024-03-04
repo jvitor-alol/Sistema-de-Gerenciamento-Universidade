@@ -99,7 +99,7 @@ CREATE TABLE IF NOT EXISTS professores (
     email_profissional VARCHAR(100) NOT NULL UNIQUE,
     email_pessoal VARCHAR(100) NOT NULL UNIQUE,
     endereco_id INT NOT NULL,
-    carga_horaria VARCHAR(20),
+    carga_horaria INT,
     salario_hora DECIMAL(10, 2) NOT NULL,
     especializacao VARCHAR(50),
     campus_id INT NOT NULL,
