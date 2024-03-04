@@ -1,5 +1,7 @@
 USE universidade;
 
+START TRANSACTION;
+
 -- Inserir usuários
 INSERT INTO users (username, password_hash) VALUES ('professor1', SHA2('password', 256));
 INSERT INTO users (username, password_hash) VALUES ('aluno1', SHA2('password', 256));
@@ -15,7 +17,7 @@ INSERT INTO enderecos (rua, numero, bairro, cidade, estado) VALUES ('Rua Exemplo
 INSERT INTO campus (cnpj, nome, endereco_id) VALUES ('12345678901234', 'Campus Exemplo', (SELECT id FROM enderecos WHERE rua = 'Rua Exemplo'));
 
 -- Inserir professor
-INSERT INTO professores (nome, sobrenome, cpf, rg, data_nascimento, genero, nacionalidade, telefone, email_profissional, email_pessoal, endereco_id, carga_horaria, salario_hora, especializacao, campus_id, user_id) VALUES ('João', 'Silva', '12345678901', '1234567890', '1990-01-01', 'Masculino', 'Brasileiro', '123456789', 'joao@professor.com', 'joao@gmail.com', (SELECT id FROM enderecos WHERE rua = 'Rua Exemplo'), '40h', 50.00, 'Matemática', (SELECT id FROM campus WHERE nome = 'Campus Exemplo'), (SELECT id FROM users WHERE username = 'professor1'));
+INSERT INTO professores (nome, sobrenome, cpf, rg, data_nascimento, genero, nacionalidade, telefone, email_profissional, email_pessoal, endereco_id, carga_horaria, salario_hora, especializacao, campus_id, user_id) VALUES ('João', 'Silva', '12345678901', '1234567890', '1990-01-01', 'Masculino', 'Brasileiro', '123456789', 'joao@professor.com', 'joao@gmail.com', (SELECT id FROM enderecos WHERE rua = 'Rua Exemplo'), '40', 50.00, 'Matemática', (SELECT id FROM campus WHERE nome = 'Campus Exemplo'), (SELECT id FROM users WHERE username = 'professor1'));
 
 -- Inserir curso
 INSERT INTO cursos (nome_curso, campus_id, coordenador_id) VALUES ('Curso de Exemplo', (SELECT id FROM campus WHERE nome = 'Campus Exemplo'), (SELECT id FROM professores WHERE nome = 'João'));
@@ -34,3 +36,5 @@ INSERT INTO alunos (nome, sobrenome, cpf, rg, data_nascimento, genero, nacionali
 
 -- Inserir matrícula
 INSERT INTO matriculas (aluno_id, disciplina_id) VALUES ((SELECT matricula FROM alunos WHERE nome = 'Maria'), (SELECT id FROM disciplinas WHERE nome = 'Disciplina Exemplo'));
+
+COMMIT;
