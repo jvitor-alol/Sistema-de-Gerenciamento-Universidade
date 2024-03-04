@@ -6,10 +6,10 @@ namespace Universidade.Server.Controllers
 {
   [Route("api/[controller]")]
   [ApiController]
-  public class UsersController : ControllerBase
+  public class GroupController : ControllerBase
   {
     private readonly AppDbContext _appDbContext;
-    public UsersController(AppDbContext appDbContext)
+    public GroupController(AppDbContext appDbContext)
     {
       _appDbContext = appDbContext;
     }
