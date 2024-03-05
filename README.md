@@ -2,7 +2,7 @@
 
 Este projeto foi desenvolvido como parte da disciplina Projeto Integrador III: Desenvolvimento de Sistemas Orientado a Objetos.
 
-O sistema foi desenvolvido em C# utilizando os frameworks ASP.NET e Node.js para gerenciar a interface web GUI e o backend, utilizando o MySQL na forma de um container Docker como banco de dados.
+O sistema foi desenvolvido em C# utilizando o framework ASP.NET para a API de conexão com o banco de dados, enquanto o Node.js foi empregado para gerenciar a interface web GUI. O banco de dados utilizado foi o MySQL , implementado em um container Docker, visando simplificar os testes e facilitar a utilização por todos os colaboradores do grupo.
 
 <div align="center">
   
@@ -18,14 +18,18 @@ O sistema foi desenvolvido em C# utilizando os frameworks ASP.NET e Node.js para
 
 ## Funcionalidades
 
+- **Login de Usuário**: Limita funcionalidades ao sistema a usuários autenticados.
 - **Cadastro de Alunos**: Permite o cadastro e gerenciamento de alunos matriculados na universidade.
-- **Cadastro de Professores**: Possibilita o registro e gerenciamento dos professores que ministram aulas na instituição.
-- **Gestão de Disciplinas**: Permite a criação, edição e exclusão de disciplinas oferecidas pela universidade.
+- **Cadastro de Funcionários**: Possibilita o registro e gerenciamento dos funcionários.
+- **Dashboard do Aluno**: Página do aluno onde ele pode gerenciar suas matrículas e atualizar seus dados.
 - **Matrícula em Disciplinas**: Permite que alunos se matriculem em disciplinas disponíveis.
+- **Dashboard do Professor**: Página do professor onde ele pode gerenciar as aulas que ministra.
+- **Dashboard do Funcionário**: Página do funcionário com informações de pagamento e dados pessoais.
+- **Gestão de Disciplinas**: Permite a criação, edição e exclusão de disciplinas oferecidas pela universidade.
 
 ## Banco de Dados
 
-O sistema possui persistência de dados por meio do uso de um container Docker de um servidor MySQL de acordo com o Modelo Entidade-Relacionamento (MER) abaixo:
+O sistema possui persistência de dados por meio de um servidor MySQL, de acordo com o Modelo Entidade-Relacionamento (MER) abaixo:
 
 ![MER](./Infra/workbench/mer.png)
 
