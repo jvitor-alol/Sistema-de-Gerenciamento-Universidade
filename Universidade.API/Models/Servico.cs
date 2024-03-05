@@ -1,6 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations;
 
-namespace Universidade.Server.Models
+namespace Universidade.API.Models
 {
   public class Servico
   {

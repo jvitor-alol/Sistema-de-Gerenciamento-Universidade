@@ -1,6 +1,6 @@
 # Sistema de Gerenciamento Universitário
 
-Este projeto foi desenvolvido como parte da disciplina Projeto Integrador III: Desenvolvimento de Sistemas Orientado a Objetos. 
+Este projeto foi desenvolvido como parte da disciplina Projeto Integrador III: Desenvolvimento de Sistemas Orientado a Objetos.
 
 O sistema foi desenvolvido em C# utilizando os frameworks ASP.NET e Node.js para gerenciar a interface web GUI e o backend, utilizando o MySQL na forma de um container Docker como banco de dados.
 
@@ -27,7 +27,7 @@ O sistema foi desenvolvido em C# utilizando os frameworks ASP.NET e Node.js para
 
 O sistema possui persistência de dados por meio do uso de um container Docker de um servidor MySQL de acordo com o Modelo Entidade-Relacionamento (MER) abaixo:
 
-![MER](./Universidade.Server/Infraestrutura/workbench/mer.png)
+![MER](./Infra/workbench/mer.png)
 
 ## Colaboradores
 

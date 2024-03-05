@@ -1,6 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations;
 
-namespace Universidade.Server.Models
+namespace Universidade.API.Models
 {
   public class User
   {    
@@ -13,5 +13,8 @@ namespace Universidade.Server.Models
     [Required]
     [MaxLength(255)]
     public required string PasswordHash { get; set; }
+
+    // Relacionamento muitos-para-muitos com grupos
+    public ICollection<GroupUser> Groups { get; set; }
   }
 }

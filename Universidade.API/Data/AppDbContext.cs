@@ -1,9 +1,9 @@
 ﻿using Microsoft.AspNetCore.Cryptography.KeyDerivation;
 using Microsoft.EntityFrameworkCore;
 using System.Security.Cryptography;
-using Universidade.Server.Models;
+using Universidade.API.Models;
 
-namespace Universidade.Server.Data
+namespace Universidade.API.Data
 {
   public class AppDbContext : DbContext
   {
@@ -25,6 +25,19 @@ namespace Universidade.Server.Data
       // Defina a chave primária composta para a entidade Matricula
       modelBuilder.Entity<Matricula>()
           .HasKey(m => new { m.AlunoId, m.DisciplinaId });
+
+      modelBuilder.Entity<GroupUser>()
+            .HasKey(gu => new { gu.UserId, gu.GroupId });
+
+      modelBuilder.Entity<GroupUser>()
+                  .HasOne(gu => gu.User)
+                  .WithMany(u => u.Groups)
+                  .HasForeignKey(gu => gu.UserId);
+
+      modelBuilder.Entity<GroupUser>()
+                  .HasOne(gu => gu.Group)
+                  .WithMany(g => g.Users)
+                  .HasForeignKey(gu => gu.GroupId);
     }
   }
 }
