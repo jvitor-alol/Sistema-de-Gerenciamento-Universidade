@@ -14,6 +14,6 @@ namespace Universidade.API.Models
     public string Description { get; set; }
 
     // Relacionamento muitos-para-muitos com usuários
-    public ICollection<User> Users { get; set; }
+    public ICollection<GroupUser> Users { get; set; }
   }
 }

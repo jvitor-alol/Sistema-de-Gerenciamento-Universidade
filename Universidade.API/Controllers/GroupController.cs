@@ -24,8 +24,7 @@ namespace Universidade.API.Controllers
     [HttpGet]
     public async Task<ActionResult<IEnumerable<Group>>> GetGroups()
     {
-      var groups = await _appDbContext.Groups.Include(g => g.Users).ToListAsync();
-      return groups;
+      return await _appDbContext.Groups.ToListAsync();
     }
 
     // GET: api/Group/5

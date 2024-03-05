@@ -26,6 +26,18 @@ namespace Universidade.API.Data
       modelBuilder.Entity<Matricula>()
           .HasKey(m => new { m.AlunoId, m.DisciplinaId });
 
+      modelBuilder.Entity<GroupUser>()
+            .HasKey(gu => new { gu.UserId, gu.GroupId });
+
+      modelBuilder.Entity<GroupUser>()
+                  .HasOne(gu => gu.User)
+                  .WithMany(u => u.Groups)
+                  .HasForeignKey(gu => gu.UserId);
+
+      modelBuilder.Entity<GroupUser>()
+                  .HasOne(gu => gu.Group)
+                  .WithMany(g => g.Users)
+                  .HasForeignKey(gu => gu.GroupId);
     }
   }
 }

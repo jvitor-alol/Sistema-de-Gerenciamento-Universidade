@@ -17,16 +17,14 @@ namespace Universidade.API.Controllers
       _appDbContext = context;
     }
 
-    // GET: api/Users
+    // GET: api/User
     [HttpGet]
     public async Task<ActionResult<IEnumerable<User>>> GetUsers()
     {
-      var users = await _appDbContext.Users.Include(u => u.Groups).ToListAsync();
-      return users;
+      return await _appDbContext.Users.ToListAsync();
     }
 
-
-    // GET: api/Users/5
+    // GET: api/User/5
     [HttpGet("{id}")]
     public async Task<ActionResult<User>> GetUser(int id)
     {
@@ -40,7 +38,7 @@ namespace Universidade.API.Controllers
       return user;
     }
 
-    // POST: api/Users
+    // POST: api/User
     [HttpPost]
     public async Task<ActionResult<User>> PostUser(User user)
     {
@@ -50,7 +48,7 @@ namespace Universidade.API.Controllers
       return CreatedAtAction(nameof(GetUser), new { id = user.Id }, user);
     }
 
-    // PUT: api/Users/5
+    // PUT: api/User/5
     [HttpPut("{id}")]
     public async Task<IActionResult> PutUser(int id, User user)
     {
