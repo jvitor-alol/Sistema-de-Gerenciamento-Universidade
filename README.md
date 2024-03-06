@@ -33,6 +33,16 @@ O sistema possui persistência de dados por meio de um servidor MySQL, de acordo
 
 ![MER](./Infra/workbench/mer-revisado.png)
 
+## API
+
+A API, quando completa, será eventualmente utilizada para gerenciar a comunicação e as requisições entre a aplicação web e o banco de dados.
+
+Alguns dos controllers e models já foram implementados no back-end e conseguem recuperar dados do MySQL como pode ser visto abaixo.
+
+![API 1](./Protótipos/Swagger/testes-api-1.png)
+![API 2](./Protótipos/Swagger/testes-api-2.png)
+![DB](./Protótipos/Swagger/query-db.png)
+
 ## Colaboradores
 
 <div align="center">
