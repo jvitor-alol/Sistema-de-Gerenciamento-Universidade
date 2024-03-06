@@ -31,7 +31,7 @@ O sistema foi desenvolvido em C# utilizando o framework ASP.NET para a API de co
 
 O sistema possui persistência de dados por meio de um servidor MySQL, de acordo com o Modelo Entidade-Relacionamento (MER) abaixo:
 
-![MER](./Infra/workbench/mer.png)
+![MER](./Infra/workbench/mer-revisado.png)
 
 ## Colaboradores
 
