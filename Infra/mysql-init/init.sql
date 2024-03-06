@@ -1,9 +1,11 @@
 -- Criação do banco de dados da universidade
-CREATE DATABASE IF NOT EXISTS Universidade;
-
-USE Universidade;
+CREATE DATABASE IF NOT EXISTS Universidade
+    CHARACTER SET = utf8mb4
+    COLLATE = utf8mb4_unicode_ci;
 
 START TRANSACTION;
+
+USE Universidade;
 
 -- Tabela de autenticação de usuários
 CREATE TABLE IF NOT EXISTS Users (
@@ -13,16 +15,9 @@ CREATE TABLE IF NOT EXISTS Users (
     Role VARCHAR(50) NOT NULL,
     PermissionGroup VARCHAR(50) NOT NULL,
     PermissionsDescription VARCHAR(255),
-    CreationDate DATE NOT NULL,
-    LastUpdated DATE
+    CreationDate DATETIME NOT NULL,
+    LastUpdated DATETIME
 );
-
--- Inserir usuários iniciais com senhas já hashadas
-INSERT INTO Users (Username, PasswordHash, Role, PermissionGroup, PermissionsDescription, CreationDate) VALUES
-('admin', SHA2('admin', 256), 'Administrador', 'Administradores', 'Controle Total', NOW()),
-('funcionario_testes', SHA2('teste1234', 256), 'Funcionário', 'Padrão', 'Perfil Limitado', NOW()),
-('professor_testes', SHA2('teste1234', 256), 'Professor', 'Padrão', 'Perfil Limitado', NOW()),
-('aluno_testes', SHA2('teste1234', 256), 'Aluno', 'Padrão', 'Perfil Limitado', NOW());
 
 -- Tabela de Endereços
 CREATE TABLE IF NOT EXISTS Enderecos (
@@ -140,7 +135,7 @@ CREATE TABLE IF NOT EXISTS Alunos (
 CREATE TABLE Matriculas (
     AlunoId INT NOT NULL,
     DisciplinaId INT NOT NULL,
-    DataMatricula DATE NOT NULL,
+    DataMatricula DATETIME NOT NULL,
     Status VARCHAR(20) NOT NULL,
     Nota DECIMAL(4, 2),
     PRIMARY KEY (AlunoId, DisciplinaId),
@@ -149,3 +144,10 @@ CREATE TABLE Matriculas (
 );
 
 COMMIT;
+
+-- Inserir usuários iniciais com senhas já hashadas
+INSERT INTO Users (Username, PasswordHash, Role, PermissionGroup, PermissionsDescription, CreationDate) VALUES
+('admin', SHA2('admin', 256), 'Administrador', 'Administradores', 'Controle total', NOW()),
+('funcionario_testes', SHA2('teste1234', 256), 'Funcionario', 'Testes', 'Perfil de testes limitado', NOW()),
+('professor_testes', SHA2('teste1234', 256), 'Professor', 'Testes', 'Perfil de testes limitado', NOW()),
+('aluno_testes', SHA2('teste1234', 256), 'Aluno', 'Testes', 'Perfil de testes limitado', NOW());
