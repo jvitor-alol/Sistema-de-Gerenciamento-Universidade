@@ -27,6 +27,35 @@ O sistema foi desenvolvido em C# utilizando o framework ASP.NET para a API de co
 - **Dashboard do Funcionário**: Página do funcionário com informações de pagamento e dados pessoais.
 - **Gestão de Disciplinas**: Permite a criação, edição e exclusão de disciplinas oferecidas pela universidade.
 
+## Protótipos
+
+As telas da interface Web GUI foram desenvolvidas utilizando a ferramenta online Figma.
+
+### Tela Inicial
+
+![Tela de Login](<Protótipos/Figma/Página inicial.png>)
+
+## Dashboard do Funcionário (Administrador)
+
+![Dashboard do Funcionário](<Protótipos/Figma/Dashboard (funcionário - menu aberto).png>)
+![Dashboard do Funcionário - Menu](<Protótipos/Figma/Dashboard (funcionário).png>)
+
+### Dashboard do Aluno
+
+![Dashboard do Aluno](<Protótipos/Figma/Dashboard (Aluno).png>)
+![Dashboard do Aluno - Menu](<Protótipos/Figma/Dashboard (Aluno - menu aberto).png>)
+
+### Dashboard do Professor
+
+![Dashboard do Professor](<Protótipos/Figma/Dashboard (professor).png>)
+![Dashboard do Professor - Menu](<Protótipos/Figma/Dashboard (professor - menu aberto).png>)
+
+### Calendário
+
+![Calendário](Protótipos/Figma/Calendário.png)
+
+> [Apresentação de telas na plataforma](https://www.figma.com/proto/aO0cKZjGMOtKTbFmtgoUG5/Projeto-Integrador?type=design&node-id=26-60&t=qMezBdqddBhRHF38-1&scaling=min-zoom&page-id=0%3A1&mode=design)
+
 ## Banco de Dados
 
 O sistema possui persistência de dados por meio de um servidor MySQL, de acordo com o Modelo Entidade-Relacionamento (MER) abaixo:
