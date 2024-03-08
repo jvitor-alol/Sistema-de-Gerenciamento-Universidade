@@ -37,22 +37,39 @@ As telas da interface Web GUI foram desenvolvidas utilizando a ferramenta online
 
 ## Dashboard do Funcionário (Administrador)
 
-![Dashboard do Funcionário](<Protótipos/Figma/Dashboard (funcionário - menu aberto).png>)
-![Dashboard do Funcionário - Menu](<Protótipos/Figma/Dashboard (funcionário).png>)
-
-### Dashboard do Aluno
-
-![Dashboard do Aluno](<Protótipos/Figma/Dashboard (Aluno).png>)
-![Dashboard do Aluno - Menu](<Protótipos/Figma/Dashboard (Aluno - menu aberto).png>)
+![Dashboard do Funcionário](<Protótipos/Figma/Dashboard (funcionário).png>)
+![Dashboard do Funcionário - Menu](<Protótipos/Figma/Dashboard (funcionário - menu aberto).png>)
 
 ### Dashboard do Professor
 
 ![Dashboard do Professor](<Protótipos/Figma/Dashboard (professor).png>)
 ![Dashboard do Professor - Menu](<Protótipos/Figma/Dashboard (professor - menu aberto).png>)
 
+### Dashboard do Aluno
+
+![Dashboard do Aluno](<Protótipos/Figma/Dashboard (Aluno).png>)
+![Dashboard do Aluno - Menu](<Protótipos/Figma/Dashboard (Aluno - menu aberto).png>)
+
+### Quadro de Notas
+
+![Quadro de Notas](<Protótipos/Figma/Quadro de Notas.png>)
+![Quadro de Notas - Detalhes](<Protótipos/Figma/Quadro de Notas - Detalhes.png>)
+
 ### Calendário
 
 ![Calendário](Protótipos/Figma/Calendário.png)
+
+### Disciplinas
+
+![Disciplinas](Protótipos/Figma/Disciplinas.png)
+
+### Matrícula
+
+![Matrícula](Protótipos/Figma/Matricula.png)
+
+### Suporte
+
+![Suporte](Protótipos/Figma/Suporte.png)
 
 > [Apresentação de telas na plataforma](https://www.figma.com/proto/aO0cKZjGMOtKTbFmtgoUG5/Projeto-Integrador?type=design&node-id=26-60&t=qMezBdqddBhRHF38-1&scaling=min-zoom&page-id=0%3A1&mode=design)
 
