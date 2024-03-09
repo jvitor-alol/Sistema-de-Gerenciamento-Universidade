@@ -31,42 +31,44 @@ O sistema foi desenvolvido em C# utilizando o framework ASP.NET para a API de co
 
 As telas da interface Web GUI foram desenvolvidas utilizando a ferramenta online Figma.
 
-### Tela Inicial
+### Telas Comuns
+
+#### Tela Inicial
 
 ![Tela de Login](<Protótipos/Figma/Página inicial.png>)
 
-### Minha Conta
+#### Minha Conta
 
 ![Minha Conta](<Protótipos/Figma/Minha conta.png>)
 
-### Suporte
+#### Suporte
 
 ![Suporte](Protótipos/Figma/Suporte.png)
 
-### Calendário
+#### Calendário
 
 ![Calendário](Protótipos/Figma/Calendário.png)
 
-## Dashboard do Funcionário (Administrador)
+### Dashboard do Funcionário (Administrador)
 
 ![Dashboard do Funcionário](<Protótipos/Figma/Dashboard (funcionário).png>)
 ![Dashboard do Funcionário - Menu](<Protótipos/Figma/Dashboard (funcionário - menu aberto).png>)
 
-## Quadro de Avisos
+#### Quadro de Avisos
 
 ![Quadro de Avisos](<Protótipos/Figma/Quadro de avisos (funcionário).png>)
 
-## Usuários
+#### Usuários
 
 ![Usuários](Protótipos/Figma/Usuários.png)
 ![Usuários - Editar/Criar](Protótipos/Figma/Usuários-editar.png)
 
-## Fornecedores
+#### Fornecedores
 
 ![Fornecedores](Protótipos/Figma/Fornecedores.png)
 ![Fornecedores - Editar/Criar](Protótipos/Figma/Fornecedores-editar.png)
 
-## Grupos
+#### Grupos
 
 ![Grupos](Protótipos/Figma/Grupos.png)
 
@@ -75,11 +77,11 @@ As telas da interface Web GUI foram desenvolvidas utilizando a ferramenta online
 ![Dashboard do Professor](<Protótipos/Figma/Dashboard (professor).png>)
 ![Dashboard do Professor - Menu](<Protótipos/Figma/Dashboard (professor - menu aberto).png>)
 
-### Turmas
+#### Turmas
 
 ![Turmas](Protótipos/Figma/Turmas.png)
 
-### Alunos
+#### Alunos
 
 ![Alunos](Protótipos/Figma/Alunos.png)
 
@@ -88,24 +90,24 @@ As telas da interface Web GUI foram desenvolvidas utilizando a ferramenta online
 ![Dashboard do Aluno](<Protótipos/Figma/Dashboard (Aluno).png>)
 ![Dashboard do Aluno - Menu](<Protótipos/Figma/Dashboard (Aluno - menu aberto).png>)
 
-### Quadro de Notas
+#### Quadro de Notas
 
 ![Quadro de Notas](<Protótipos/Figma/Quadro de Notas.png>)
 ![Quadro de Notas - Detalhes](<Protótipos/Figma/Quadro de Notas - Detalhes.png>)
 
-### Disciplinas
+#### Disciplinas
 
 ![Disciplinas](Protótipos/Figma/Disciplinas.png)
 
-### Matrícula
+#### Matrícula
 
 ![Matrícula](Protótipos/Figma/Matricula.png)
 
-### Agendamento de Provas
+#### Agendamento de Provas
 
 ![Matrícula](<Protótipos/Figma/Agendamento de Provas.png>)
 
-### Financeiro
+#### Financeiro
 
 ![Matrícula](Protótipos/Figma/Financeiro.png)
 
