@@ -35,15 +35,53 @@ As telas da interface Web GUI foram desenvolvidas utilizando a ferramenta online
 
 ![Tela de Login](<Protótipos/Figma/Página inicial.png>)
 
+### Minha Conta
+
+![Minha Conta](<Protótipos/Figma/Minha conta.png>)
+
+### Suporte
+
+![Suporte](Protótipos/Figma/Suporte.png)
+
+### Calendário
+
+![Calendário](Protótipos/Figma/Calendário.png)
+
 ## Dashboard do Funcionário (Administrador)
 
 ![Dashboard do Funcionário](<Protótipos/Figma/Dashboard (funcionário).png>)
 ![Dashboard do Funcionário - Menu](<Protótipos/Figma/Dashboard (funcionário - menu aberto).png>)
 
+## Quadro de Avisos
+
+![Quadro de Avisos](<Protótipos/Figma/Quadro de avisos (funcionário).png>)
+
+## Usuários
+
+![Usuários](Protótipos/Figma/Usuários.png)
+![Usuários - Editar/Criar](Protótipos/Figma/Usuários-editar.png)
+
+## Fornecedores
+
+![Fornecedores](Protótipos/Figma/Fornecedores.png)
+![Fornecedores - Editar/Criar](Protótipos/Figma/Fornecedores-editar.png)
+
+## Grupos
+
+![Grupos](Protótipos/Figma/Grupos.png)
+
 ### Dashboard do Professor
 
 ![Dashboard do Professor](<Protótipos/Figma/Dashboard (professor).png>)
 ![Dashboard do Professor - Menu](<Protótipos/Figma/Dashboard (professor - menu aberto).png>)
+
+### Turmas
+
+![Turmas](Protótipos/Figma/Turmas.png)
+
+### Alunos
+
+![Alunos](Protótipos/Figma/Alunos.png)
 
 ### Dashboard do Aluno
 
@@ -55,10 +93,6 @@ As telas da interface Web GUI foram desenvolvidas utilizando a ferramenta online
 ![Quadro de Notas](<Protótipos/Figma/Quadro de Notas.png>)
 ![Quadro de Notas - Detalhes](<Protótipos/Figma/Quadro de Notas - Detalhes.png>)
 
-### Calendário
-
-![Calendário](Protótipos/Figma/Calendário.png)
-
 ### Disciplinas
 
 ![Disciplinas](Protótipos/Figma/Disciplinas.png)
@@ -67,9 +101,13 @@ As telas da interface Web GUI foram desenvolvidas utilizando a ferramenta online
 
 ![Matrícula](Protótipos/Figma/Matricula.png)
 
-### Suporte
+### Agendamento de Provas
 
-![Suporte](Protótipos/Figma/Suporte.png)
+![Matrícula](<Protótipos/Figma/Agendamento de Provas.png>)
+
+### Financeiro
+
+![Matrícula](Protótipos/Figma/Financeiro.png)
 
 > [Apresentação de telas na plataforma](https://www.figma.com/proto/aO0cKZjGMOtKTbFmtgoUG5/Projeto-Integrador?type=design&node-id=26-60&t=qMezBdqddBhRHF38-1&scaling=min-zoom&page-id=0%3A1&mode=design)
 
