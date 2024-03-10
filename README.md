@@ -71,6 +71,7 @@ As telas da interface Web GUI foram desenvolvidas utilizando a ferramenta online
 #### Grupos
 
 ![Grupos](Protótipos/Figma/Grupos.png)
+![Grupos - Editar/Criar](Protótipos/Figma/Grupos-editar.png)
 
 ### Dashboard do Professor
 
@@ -81,9 +82,17 @@ As telas da interface Web GUI foram desenvolvidas utilizando a ferramenta online
 
 ![Turmas](Protótipos/Figma/Turmas.png)
 
+#### Aulas (visão do professor)
+
+![Aulas (visão do professor)](<Protótipos/Figma/Aulas (visão do professor).png>)
+
 #### Alunos
 
 ![Alunos](Protótipos/Figma/Alunos.png)
+
+#### Sobre o Professor
+
+![Sobre mim](<Protótipos/Figma/Sobre mim (professor).png>)
 
 ### Dashboard do Aluno
 
@@ -98,6 +107,11 @@ As telas da interface Web GUI foram desenvolvidas utilizando a ferramenta online
 #### Disciplinas
 
 ![Disciplinas](Protótipos/Figma/Disciplinas.png)
+
+#### Aulas
+
+![Aulas (visão do aluno)](<Protótipos/Figma/Aulas (visão do aluno).png>)
+![Aula gravada](<Protótipos/Figma/Aula gravada.png>)
 
 #### Matrícula
 
